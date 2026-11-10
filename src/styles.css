@@ -153,3 +153,25 @@
     color: var(--color-foreground);
   }
 }
+
+:root {
+  --primary: oklch(0.52 0.045 220); /* #537581 */
+  --primary-foreground: oklch(0.98 0.01 95);
+  --accent: oklch(0.9 0.16 105); /* citron */
+  --accent-foreground: oklch(0.25 0.03 220);
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.58 0.05 215), oklch(0.52 0.045 220) 55%, oklch(0.38 0.04 225));
+}
+
+@theme inline {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Outfit", sans-serif;
+}
+
+body { font-family: var(--font-sans); }
+.hero-bg { background: var(--gradient-hero); }
+.orb { position: absolute; border-radius: 9999px; filter: blur(80px); pointer-events: none; }
+.orb-a { width: 28rem; height: 28rem; top: -8rem; right: -6rem; background: color-mix(in oklab, var(--accent) 35%, transparent); animation: float 12s ease-in-out infinite; }
+.orb-b { width: 22rem; height: 22rem; bottom: -6rem; left: -6rem; background: color-mix(in oklab, var(--primary-foreground) 15%, transparent); animation: float 14s ease-in-out infinite reverse; }
+@keyframes float { 50% { transform: translate(-2rem, 2rem); } }
+.fade-up { opacity: 0; animation: fadeUp 0.9s ease-out forwards; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
