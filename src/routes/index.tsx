@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
       { title: "RoyDex Agency — Coming Soon" },
       { name: "description", content: "RoyDex Agency – Rise Of Your Digital Experience. Our new digital experience is coming soon." },
       { property: "og:title", content: "RoyDex Agency — Coming Soon" },
-      { property: "og:description", content: "Something exceptional is coming. Video Production, Creative Design, Visual Identity, Digital Solutions." },
+      { property: "og:description", content: "Something exceptional is coming. Video Production, Creative Design, Visual Identity, Solutions Web." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const services = ["Video Production", "Creative Design", "Visual Identity", "Digital Solutions"];
+const services = ["Video Production", "Creative Design", "Visual Identity", "Solutions Web"];
 
 function Index() {
   return (
@@ -33,7 +33,7 @@ function Index() {
 
       <section className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 text-center">
         <p className="fade-up mb-6 text-xs uppercase tracking-[0.5em] text-accent">A new experience</p>
-        <h1 className="fade-up font-display text-5xl leading-tight md:text-7xl" style={{ animationDelay: "0.15s" }}>
+        <h1 className="fade-up font-display text-4xl leading-tight md:text-5xl" style={{ animationDelay: "0.15s" }}>
           Something exceptional<br />is coming.
         </h1>
         <p className="fade-up mt-6 max-w-xl text-lg text-primary-foreground/80" style={{ animationDelay: "0.3s" }}>
