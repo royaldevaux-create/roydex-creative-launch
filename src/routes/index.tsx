@@ -22,7 +22,8 @@ function Index() {
       <div className="orb orb-a" />
       <div className="orb orb-b" />
 
-      <header className="relative z-10 flex items-center justify-end px-6 py-6 md:px-12">
+      <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12">
+        <span className="font-display text-xl tracking-wide text-primary-foreground">RoyDex Agency</span>
         <span className="rounded-full border border-primary-foreground/30 px-4 py-1 text-xs uppercase tracking-[0.3em]">
           Coming soon
         </span>
