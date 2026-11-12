@@ -52,7 +52,7 @@ function Index() {
 
       <footer className="relative z-10 px-6 py-8 text-center text-sm text-primary-foreground/70">
         <span className="font-display text-base text-primary-foreground">RoyDex Agency</span> — Rise Of Your Digital Experience
-        <span className="font-display text-base text-primary-foreground"> +261 34 09 586 24 </span>
+        <br> +261 34 09 586 24
       </footer>
     </main>
   );
